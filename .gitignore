@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.venv-app/
+build/
+dist/
+*.egg-info/
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Training data and recordings (large, contain personal video) – see data/README.md
+data/*
+!data/README.md
+catboost_info/
+
+# Old experiments, portable build output
+legacy/
+_portable-work/
+HandPilot-dist/
+HandPilot-portable/
+*.zip
+*.tar.gz

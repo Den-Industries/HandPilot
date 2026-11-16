@@ -1,0 +1,8 @@
+# HandPilot runtime
+numpy>=1.24,<2
+mediapipe==0.10.21            # brings opencv-contrib-python
+opencv-contrib-python>=4.8,<4.12
+PySide6-Essentials>=6.6
+# Linux only (X11 input injection, global hotkeys):
+python-xlib; sys_platform == "linux"
+pynput; sys_platform == "linux"

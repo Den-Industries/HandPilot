@@ -1,0 +1,19 @@
+name: tests
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  gestures:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install "numpy>=1.24,<2"
+      - name: Gesture shortcuts (synthetic data)
+        run: python tests/test_shortcuts.py
+      - name: Everything compiles
+        run: python -m compileall -q handpilot tools training tests
