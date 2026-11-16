@@ -118,3 +118,9 @@ python tests/replay_eval.py                 # сквозной прогон за
 
 Обучающие данные в репозиторий не входят, формат описан в [data/README.md](data/README.md).
 Как устроен конвейер и почему выбран именно MediaPipe: [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md).
+
+## Лицензия
+
+Код HandPilot распространяется под лицензией [MIT](LICENSE). Используемые библиотеки имеют свои
+лицензии: MediaPipe (Apache-2.0), OpenCV (Apache-2.0), PySide6/Qt (LGPL-3.0), NumPy (BSD-3-Clause).
+Автономная сборка для Windows содержит эти библиотеки в виде отдельных файлов, их лицензии остаются в силе.
